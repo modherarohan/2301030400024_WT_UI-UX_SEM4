@@ -1,0 +1,660 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    }
+    
+    body {
+    background-color: #0f172a;
+    color: #fff;
+    }
+    
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #ffffff;
+    color: #000;
+    }
+    
+    .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    }
+    
+    .nav-links a {
+    margin: 0 1rem;
+    color: #888;
+    text-decoration: none;
+    font-weight: 500;
+    }
+    
+    .nav-links .login,
+    .nav-links .join {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    }
+    
+    .login {
+    background-color: #000;
+    color: #fff;
+    }
+    
+    .join {
+    background-color: #0ea5e9;
+    color: #fff;
+    }
+    
+    .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    }
+    
+    .hero-text {
+    max-width: 50%;
+    }
+    
+    .hero-text h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    }
+    
+    .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #cbd5e1;
+    }
+    
+    .cta {
+    padding: 1rem 2rem;
+    background-color: #0ea5e9;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    }
+    
+    .hero-image img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    }
+    /* Why Choose Us Section */
+.why-choose-us {
+    background-color: #0f172a;
+    padding: 4rem 2rem;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .why-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .why-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+  }
+  
+  .why-subtitle {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    margin-bottom: 3rem;
+  }
+  
+  .why-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .why-cards {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  .why-card {
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 1rem;
+    flex: 1;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  
+  .why-image {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+  }
+  
+  .why-card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .why-card-desc {
+    font-size: 0.95rem;
+    color: #e2e8f0;
+  }
+  /* How It Works Section */
+.how-works-section {
+    background-color: #0f172a;
+    color: #fff;
+    padding: 4rem 2rem 2rem;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .how-works-top {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+  }
+  
+  @media (min-width: 768px) {
+    .how-works-top {
+      flex-direction: row;
+    }
+  }
+  
+  .how-works-text {
+    max-width: 500px;
+  }
+  
+  .how-works-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+  }
+  
+  .how-works-subtitle {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    margin-bottom: 1.5rem;
+  }
+  
+  .how-works-button {
+    padding: 0.75rem 1.5rem;
+    background-color: transparent;
+    border: 1px solid #cbd5e1;
+    color: #cbd5e1;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .how-works-button:hover {
+    background-color: #1e293b;
+  }
+  
+  .how-works-image-container {
+    max-width: 500px;
+  }
+  
+  .how-works-image {
+    width: 100%;
+    border-radius: 1.5rem;
+  }
+  
+  /* Feature Grid */
+  .how-works-features {
+    background-color: #1e293b;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+  
+  .how-works-feature {
+    text-align: center;
+    color: #f1f5f9;
+  }
+  
+  .how-works-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .how-works-feature-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .how-works-feature-desc {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+  }
+  .testimonial-section {
+    padding: 60px 20px;
+    background-color: #1a1d24;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .testimonial-box {
+    flex: 1 1 400px;
+    padding: 40px 20px;
+    border-radius: 12px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .testimonial-box.dark {
+    background-color: #141821;
+  }
+  
+  .testimonial-box.darker {
+    background-color: #2a2d34;
+  }
+  
+  .testimonial-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  
+  .testimonial-author {
+    font-size: 0.9rem;
+    color: #cccccc;
+  }
+  #pricing-section {
+    background-color: #1a1d24;
+    padding: 60px 20px;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+  }
+  
+  .pricing-header {
+    margin-bottom: 40px;
+  }
+  
+  .pricing-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  
+  .pricing-subtitle {
+    font-size: 1.1rem;
+    color: #ccc;
+  }
+  
+  .pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .pricing-card {
+    border-radius: 20px;
+    padding: 30px 20px;
+    max-width: 350px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    position: relative;
+  }
+  
+  .pricing-card-free {
+    background-color: #141821;
+    border: 1px solid #3a3d45;
+  }
+  
+  .pricing-card-premium {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .pricing-badge {
+    display: inline-block;
+    background-color: #2f3136;
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    margin-bottom: 16px;
+  }
+  
+  .pricing-amount {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .pricing-currency {
+    font-size: 1.2rem;
+    vertical-align: top;
+  }
+  
+  .pricing-duration {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  
+  .pricing-description {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    color: inherit;
+  }
+  
+  .pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+  }
+  
+  .pricing-features li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 24px;
+  }
+  
+  .pricing-features li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #00bfa6;
+    font-weight: bold;
+  }
+  
+  .pricing-button {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .pricing-button-primary {
+    background-color: #00bfa6;
+    color: #fff;
+  }
+  
+  .pricing-button-primary:hover {
+    background-color: #009c89;
+  }
+  
+  .pricing-button-secondary {
+    background-color: #2e2f34;
+    color: #fff;
+  }
+  
+  .pricing-button-secondary:hover {
+    background-color: #3e3f45;
+  }
+  #signup-section {
+    background-color: #00a7af;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .signup-container {
+    background-color: #1a1d24;
+    border-radius: 24px;
+    padding: 40px 30px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .signup-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+  }
+  
+  .signup-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  
+  .signup-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #ddd;
+  }
+  
+  .signup-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .signup-google {
+    background-color: #2e2f34;
+    color: #fff;
+  }
+  
+  .signup-google img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .signup-email-btn {
+    background-color: #00bfa6;
+    color: #fff;
+  }
+  
+  .signup-email-btn:hover {
+    background-color: #009c89;
+  }
+  
+  .signup-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 0.9rem;
+    margin: 20px 0;
+  }
+  
+  .signup-divider span {
+    flex: 1;
+    height: 1px;
+    background-color: #444;
+    margin: 0 10px;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+  }
+  
+  .signup-form label {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  .signup-form input {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background-color: #2a2b31;
+    color: #fff;
+    outline: none;
+  }
+  
+  .signup-form input::placeholder {
+    color: #aaa;
+  }
+  
+  .signup-terms {
+    margin-top: 20px;
+    font-size: 0.75rem;
+    color: #999;
+  }
+  
+  .signup-terms a {
+    color: #00e6d8;
+    text-decoration: none;
+  }
+  
+  .signup-terms a:hover {
+    text-decoration: underline;
+  }
+  #footer-section {
+    background-color: #1e222a;
+    color: #fff;
+    padding: 40px 20px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  
+  .footer-brand {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    flex: 1 1 250px;
+  }
+  
+  .footer-logo {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+  
+  .footer-title {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .footer-tagline {
+    font-size: 1rem;
+    color: #dcdcdc;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 50px;
+    flex: 2 1 600px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 120px;
+  }
+  
+  .footer-heading {
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #ffffff;
+  }
+  
+  .footer-column a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  
+  .footer-column a:hover {
+    text-decoration: underline;
+    color: #fff;
+  }
+  
+  .footer-divider {
+    border: none;
+    border-top: 1px solid #444;
+    margin: 30px 0 20px;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    color: #aaa;
+  }
+  
+  .footer-legal {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-legal a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  .footer-legal a:hover {
+    text-decoration: underline;
+  }
+  
